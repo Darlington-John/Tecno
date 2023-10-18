@@ -57,7 +57,7 @@ video {
 }
 
 .full-video-container {
-    height: 880px;
+    height: 100vh;
     box-sizing: border-box;
     width: 100%;
 }
@@ -350,6 +350,10 @@ video {
     transition: all 0.3s;
 }
 
+.news-img:not(:hover) {
+    transition: all 0.7s ease;
+}
+
 .news {
     width: 500px;
 }
@@ -437,12 +441,6 @@ video {
 }
 
 @media screen and (max-width: 768px) {
-    .full-video-container {
-        height: 100%;
-        box-sizing: border-box;
-        width: 100%;
-        padding-top: 75px;
-    }
     .Phone-title {
         position: absolute;
         top: 77%;
@@ -462,6 +460,15 @@ video {
     }
     .recom-container {
         padding: 100px 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .full-video-container {
+        height: 60vh;
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 75px;
     }
 }
 

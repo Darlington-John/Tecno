@@ -1,0 +1,163 @@
+#hover-nav-bar {
+    background-color: #ffffff;
+    padding: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    animation: flow 1s ease-out;
+    transition: all 1s ease-out;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.DropDown {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.DropDown:hover {
+    display: block;
+}
+
+.Work:hover .DropDown {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+
+.phones-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.Navbar {
+    z-index: 10001;
+    position: fixed;
+    top: 0;
+}
+
+.Navbar.hovered {
+    background-color: #ffffff !important;
+}
+
+.Navbar.hovered a {
+    color: #000000;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Work {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@keyframes flow {
+    0% {
+        max-height: 100px;
+    }
+    25% {
+        max-height: 250px;
+        max-height: auto;
+    }
+    50% {
+        max-height: 300px;
+    }
+    75% {
+        max-height: 370px;
+        max-height: auto;
+    }
+    100% {
+        max-height: auto;
+    }
+}
+
+.dropdown-buttons-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.dropdown-buttons {
+    background-color: #f5f5f5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0px;
+    border-radius: inherit;
+    color: black;
+    font-size: 15px;
+}
+
+.dropdown-buttons:hover {
+    color: #0264f8;
+    cursor: pointer;
+}
+
+.dropdown-button-img {
+    width: 17px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    padding: 50px 20px;
+}
+
+.accordion-flush .accordion-item .accordion-button,
+.accordion-flush .accordion-item .accordion-button.collapsed {
+    padding: 50px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #Navbar {
+        background-color: rgb(255, 255, 255) !important;
+    }
+    .phones-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .dropdown-buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .dropdown-buttons {
+        background-color: #f5f5f5;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0px;
+        border-radius: inherit;
+        color: black;
+        font-size: 15px;
+    }
+}

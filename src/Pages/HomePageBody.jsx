@@ -186,7 +186,7 @@ export const FullVideoSlider = () => {
         </div>
       )}
       <Swiper
-        spaceBetween={30}
+        spaceBetween={0}
         centeredSlides={true}
         autoplay={{
           delay: 15500,
@@ -391,7 +391,7 @@ const RecommedationSection = () => {
           RecomeCard={RecomCamonImg}
           Recome="CAMON 20 Premier 5G
 "
-          features="Night portrait master"
+          features="Night portrait master."
         />
       </div>
     </div>

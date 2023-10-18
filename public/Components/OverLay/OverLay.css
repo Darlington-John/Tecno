@@ -1,0 +1,64 @@
+.Overlay {
+    display: none;
+    width: 100%;
+    height: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: height 0.5s
+}
+
+.Overlay-content {
+    position: relative;
+    top: 15%;
+    width: auto;
+    background-color: #ffffff;
+    margin: 0px 35px 0px 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.Overlay a {
+    padding: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+.Overlay a:hover,
+.Overlay a:focus {
+    color: #f1f1f1;
+}
+
+.AccdHeader {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+    .Overlay {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .Overlay {
+        display: block;
+    }
+}
+
+.Overlay {
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .Overlay {
+        display: block;
+    }
+    .AccdHeader {
+        font-size: 16px;
+    }
+}
